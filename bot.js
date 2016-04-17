@@ -6,8 +6,8 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
+      botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexSC = /^\/SZN/i; botDEZ = /(.*\s+)(.*dez)(\s+.*)/i; botDuck = /^\/duck/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/schedules/; botRegexSh = /^\/shrug/; botRegexWk = /^\/teams/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -21,7 +21,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/SRMFL/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/maddenszn"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -36,24 +36,24 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
+    postMessage("http://daddyleagues.com/maddenszn/rules");
     this.res.end();
   } 
-  else if(request.text && botRegexGTA.test(request.text)) {
+  else if(request.text && botRegexMI.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
+    postMessage("https://i.kinja-img.com/gawker-media/image/upload/mjvi0ol0s5i3c6ikolql.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/SRMFL/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/maddenszn/teams"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/SRMFL/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/maddenszn/players?=name"+rep+"&position=all&team=all");
     this.res.end();
   }  
 
@@ -62,9 +62,9 @@ function respond() {
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
     this.res.end();
   } 
-  else if(request.text && botRegexSb.test(request.text)) {
+  else if(request.text && botRegexSB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
+    postMessage("http://daddyleagues.com/maddenszn/schedules");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -74,12 +74,12 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
+    postMessage("http://daddyleagues.com/maddenszn/teams");
     this.res.end();
   } 
-  else if(request.text && botODB.test(request.text)) {
+  else if(request.text && botDEZ.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("OBJ*");
+    postMessage("Throw Up The X*");
     this.res.end();
   } 
   else if(request.text && botDuck.test(request.text)) {
