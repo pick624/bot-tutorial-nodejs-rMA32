@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/ddl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexSC = /^\/SZN/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/schedules/; botRegexSh = /^\/shrug/; botRegexWk = /^\/teams/; botRegexCC = /^\/cc/;
-      botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.wallydfantasyfootball.com/things/cheddar-cheese-cheesehead-fantasy-football-logo-helmet.jpg';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -92,6 +92,11 @@ function respond() {
     postMessage("https://i.groupme.com/851x1184.jpeg.330228901f684b0cb46cd1cef6953923");
     this.res.end();
   }
+  else if(request.text && botRegexCryNeema.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://i.groupme.com/750x706.jpeg.3331bbcbd639415295a9eb64c42cb1c5.large");
+this.res.end();
+}
   else if(request.text && botRegexCheese.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
