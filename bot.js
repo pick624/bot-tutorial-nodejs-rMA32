@@ -36,7 +36,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1280x3708.jpeg.10b81a2811504856896416f47aad7d80");
+    postMessage("http://oi67.tinypic.com/2m2xl75.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexMI.test(request.text)) {
