@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/ddl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexSC = /^\/SZN/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/schedules/; botRegexSh = /^\/shrug/; botRegexWk = /^\/teams/; botRegexCC = /^\/cc/;
       botRegexCheese = /^\/cheese/
@@ -21,7 +21,7 @@ function respond() {
   } 
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/maddenszn/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -36,7 +36,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn/rules");
+    postMessage("http://daddyleagues.com/maddenszn/rules/");
     this.res.end();
   } 
   else if(request.text && botRegexMI.test(request.text)) {
@@ -46,7 +46,7 @@ function respond() {
   } 
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn/teams"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/maddenszn/teams/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
@@ -64,7 +64,7 @@ function respond() {
   } 
   else if(request.text && botRegexSB.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn/schedules");
+    postMessage("http://daddyleagues.com/maddenszn/schedule/s");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -74,7 +74,7 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn/teams");
+    postMessage("http://daddyleagues.com/maddenszn/teams/");
     this.res.end();
   } 
   else if(request.text && botDEZ.test(request.text)) {
