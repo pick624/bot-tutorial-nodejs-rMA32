@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/ddl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexSC = /^\/SZN/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/full rules/; botRegexSh = /^\/oh/; botRegexWk = /^\/teams/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/full rules/; botRegexSh = /^\/oh/; botRegexWk = /^\/teams/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/;
       botRegexCryNeema=/^\/cry neema/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
@@ -95,6 +95,11 @@ function respond() {
     else if(request.text && botRegexSr.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://i.imgur.com/78jbQMz.jpg");
+    this.res.end();
+  }  
+    else if(request.text && botRegexSt.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://cdn.meme.am/instances/54668610.jpg");
     this.res.end();
   }
   else if(request.text && botRegexCryNeema.test(request.text)) {
