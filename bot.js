@@ -7,10 +7,10 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/;  botRegexDL = /^\/ddl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexSC = /^\/SZN/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/full rules/; botRegexSh = /^\/shrug/; botRegexWk = /^\/teams/; botRegexCC = /^\/cc/;
+      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/full rules/; botRegexSh = /^\/shrug/; botRegexWk = /^\/teams/; botRegexCC = /^\/respek /;
       botRegexCryNeema=/^\/cry neema/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
-      cheese3 = 'http://www.wallydfantasyfootball.com/things/cheddar-cheese-cheesehead-fantasy-football-logo-helmet.jpg';
+      cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -26,7 +26,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/B5BSVqH.png");
+    postMessage("https://cdn.meme.am/instances/58034344.jpg");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
@@ -89,7 +89,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/851x1184.jpeg.330228901f684b0cb46cd1cef6953923");
+    postMessage("https://pbs.twimg.com/profile_images/723579359223767040/UBmQqNzQ_400x400.jpg");
     this.res.end();
   }
   else if(request.text && botRegexCryNeema.test(request.text)) {
