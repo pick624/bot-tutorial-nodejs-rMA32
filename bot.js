@@ -129,7 +129,7 @@ this.res.end();
 }
   else if(request.text && botRegexCryingg.test(request.text)) {
 this.res.writeHead(200);
-postMessage("http://i.imgur.com/U76EjmQ.gif");
+postMessage("http://cdn3.sbnation.com/imported_assets/1945573/MORENO-TEARS.gif");
 this.res.end();
 }
   else if(request.text && botRegexCheese.test(request.text)) {
