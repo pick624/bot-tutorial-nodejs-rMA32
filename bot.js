@@ -26,7 +26,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://cdn.meme.am/instances/58034344.jpg");
+    postMessage("https://i.groupme.com/600x600.jpeg.abf553e8c766444ca32cd06ffb450d8c");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
@@ -36,7 +36,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/2059x2672.jpeg.7b8c71dbe3154c2fb965d8868ae5c67e");
+    postMessage("https://i.groupme.com/1700x1951.jpeg.7d433d833d3c4be6865f5303d8488bb6");
     this.res.end();
   } 
   else if(request.text && botRegexMI.test(request.text)) {
