@@ -5,16 +5,12 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
-      botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
-      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
-      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
-      botRegexDaf = /^\/dafuq/;
-      siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
-      siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
+      botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
+      botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/;botDuck = /^\/duck/;
+      botRegexTw = /^\/twitch/i; botRegexSh = /^\/oh/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/; botRegexCheese = /^\/cheese/
+      cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
+      cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -22,127 +18,37 @@ function respond() {
     this.res.writeHead(200);
     postMessage(cool());
     this.res.end();
-  }
-  else if(request.text && botRegexSlut.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexStop.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("Stop appropriating black culture");
-    this.res.end();
-  } 
-  else if(request.text && botRegexProp.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/409x327.jpeg.08b5d95c51bb4897835cfe6b514f2f52.large");
-    this.res.end();
-  }
-  else if(request.text && botRegexKys.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.wikihow.com/Tie-a-Noose");
-    this.res.end();
-  } 
-  else if(request.text && botRegexSlam.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://pbs.twimg.com/profile_images/587294731471757313/ZpI5PfKq.jpg");
-    this.res.end();
-  } 
-  else if(request.text && botRegexDaf.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i3.kym-cdn.com/photos/images/facebook/000/787/356/d6f.jpg");
-    this.res.end();
-  } 
-  else if(request.text && botRegexBrye.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/600x490.jpeg.b31d5153fb474d9bb18dd51b3d650afe.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexGian.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://i.imgur.com/9V6ZnvD.png");
-    this.res.end();
-  } 
-  else if(request.text && botRegexScrotes.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1006x1340.jpeg.730381e4280e4028b8375432af14f39f.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexShaki.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/305x375.jpeg.a8dd3aa18c7a4963a553e6dc16bcb100.large");
-    this.res.end();
-  } 
-  else if(request.text && botRegexDL.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    //postMessage("http://daddyleagues.com/SRMFL/team/"+request.text.substring(5,8)+"/depthchart");
-    this.res.end();
-  } 
-  
-  else if(request.text && botRegexOW.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("www.daddyleagues.com/maddenrating/");
-    this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/B5BSVqH.png");
+    postMessage("https://i.groupme.com/600x600.jpeg.abf553e8c766444ca32cd06ffb450d8c");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
+    postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
+    postMessage("https://docs.google.com/document/d/1YQTYkbC8SUn7ecj915PNpUiNYmagKNp-zsImKW8u0NI/edit?usp=sharing");
     this.res.end();
   } 
-  else if(request.text && botRegexGTA.test(request.text)) {
+  else if(request.text && botRegexMI.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/220x147.jpeg.a2dd2add32b14fff9e329535186d793c.large");
+    postMessage("https://i.kinja-img.com/gawker-media/image/upload/mjvi0ol0s5i3c6ikolql.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexSC.test(request.text)) {
-    this.res.writeHead(200);
-    
-    postMessage("http://daddyleagues.com/SRMFL/team/"+request.text.substring(5,8)+"/schedule");
-    this.res.end();
-  }
-  else if(request.text && botRegexP.test(request.text)) {
-    this.res.writeHead(200);
-    var req = request.text.substring(5,request.text.length);
-    var rep = req.replace(/ /,"+");
-    postMessage("http://www.daddyleagues.com/maddenrating?name="+rep+"&position=all&team=all");
-    
-    this.res.end();
-  }  
 
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
     this.res.end();
   } 
-  else if(request.text && botRegexSb.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
-    this.res.end();
-  } 
+
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("¯\\_(ツ)_/¯");
-    this.res.end();
-  } 
-  else if(request.text && botRegexWk.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
-    this.res.end();
-  } 
-  else if(request.text && botODB.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("OBJ*");
+    postMessage("http://www.quickmeme.com/img/fe/fe9126fe4327f1b37f06c8c00c051bf8f37c1580b6c3d16da8b4dcb8607b60b2.jpg");
     this.res.end();
   } 
   else if(request.text && botDuck.test(request.text)) {
@@ -152,17 +58,57 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/851x1184.jpeg.330228901f684b0cb46cd1cef6953923");
+    postMessage("https://i.groupme.com/400x400.jpeg.9e7bea369900400fb3edb99093bdac91");
     this.res.end();
   }
-  else if(request.text && botRegexSiege.test(request.text)) {
+    else if(request.text && botRegexSr.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/78jbQMz.jpg");
+    this.res.end();
+  }  
+    else if(request.text && botRegexSt.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://cdn.meme.am/instances/54668610.jpg");
+    this.res.end();
+  }  
+    else if(request.text && botRegexQu.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://media.giphy.com/media/IHaQCbfUJ26wE/giphy.gif");
+    this.res.end();
+  }
+  else if(request.text && botRegexCryNeema.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://i.groupme.com/750x706.jpeg.3331bbcbd639415295a9eb64c42cb1c5.large");
+this.res.end();
+}
+  else if(request.text && botRegexLuck.test(request.text)) {
+this.res.writeHead(200);
+postMessage("http://memecrunch.com/meme/IAWU/you-don-t-always-beat-me-at-madden/image.jpg");
+this.res.end();
+}
+  else if(request.text && botRegexFumble.test(request.text)) {
+this.res.writeHead(200);
+postMessage("http://s2.quickmeme.com/img/c5/c5e2527ff84089b25e6cd56810125c38dc008985077b3cf18207be27ae4b232d.jpg");
+this.res.end();
+}
+  else if(request.text && botRegexL.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://pbs.twimg.com/media/CLNho0mUcAAZ5KC.jpg");
+this.res.end();
+}
+  else if(request.text && botRegexCryingg.test(request.text)) {
+this.res.writeHead(200);
+postMessage("http://cdn3.sbnation.com/imported_assets/1945573/MORENO-TEARS.gif");
+this.res.end();
+}
+  else if(request.text && botRegexCheese.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
-      postMessage(siege1);
+      postMessage(cheese1);
     else if(Math.random() >0.6)
-      postMessage(siege3)
+      postMessage(cheese3)
     else
-      postMessage(siege2);
+      postMessage(cheese2);
     this.res.end();
   }
   
