@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/; botRegexMI = /^\/Mike/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexSh = /^\/oh/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;botRegexBye = /^\/bye/; botRegexMad = /^\/umad/;  botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;botRegexBye = /^\/bye/; botRegexMad = /^\/umad/; botRegexJoe = /^\/cry joe/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -109,6 +109,11 @@ this.res.end();
     else if(request.text && botRegexMad.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/600x457.jpeg.47b7d760f00a400280e4d83a07719149");
+    this.res.end();
+  } 
+      else if(request.text && botRegexJoe.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/1620x2160.jpeg.f8db8bc8222e404d9813750ca22a1d0f");
     this.res.end();
   } 
   else if(request.text && botRegexCheese.test(request.text)) {
