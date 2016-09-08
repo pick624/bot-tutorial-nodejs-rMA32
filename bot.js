@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/; botRegexMI = /^\/Mike/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexSh = /^\/oh/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;botRegexBye = /^\/bye/; botRegexMad = /^\/umad/; botRegexJoe = /^\/cry joe/; botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cryy/;botRegexBye = /^\/bye/; botRegexMad = /^\/umad/; botRegexJoe = /^\/cry joe/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
