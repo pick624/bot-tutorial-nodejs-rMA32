@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/; botRegexMI = /^\/Mike/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexSh = /^\/oh/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/; botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;botRegexBye = /^\/bye/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -101,6 +101,11 @@ this.res.writeHead(200);
 postMessage("http://cdn3.sbnation.com/imported_assets/1945573/MORENO-TEARS.gif");
 this.res.end();
 }
+  else if(request.text && botRegexBye.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/648x708.jpeg.3f368f610c6c412e9ced402ab4cc90ea");
+    this.res.end();
+  } 
   else if(request.text && botRegexCheese.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)
