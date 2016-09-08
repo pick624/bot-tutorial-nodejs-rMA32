@@ -5,8 +5,8 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
-      botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/;botDuck = /^\/duck/;
+      botRegex = /^\/cool guy/;  botRegexSalt = /^\/salt/; botRegexRules = /^\/rules/;
+      botRegexAd=/^\/advance/; botRegexMI = /^\/Mike/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexSh = /^\/oh/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
       botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
