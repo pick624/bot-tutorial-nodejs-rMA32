@@ -5,9 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/ddl/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/;
-      botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexSC = /^\/SZN/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
-      botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSB = /^\/full rules/; botRegexSh = /^\/oh/; botRegexWk = /^\/teams/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
+      botRegex = /^\/cool guy/;  botRegexChew = /^\/chew clock/i;botRegexSalt = /^\/salt/;botRegexPay = /^\/payouts/;
+      botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexOffense = /^\/offense/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
+      botRegexDefense = /^\/defense/i;  botRegexTw = /^\/twitch/i; botRegexTrade = /^\/trades/; botRegexSh = /^\/oh/; botRegexMix = /^\/Mix/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
       botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
@@ -19,9 +19,9 @@ function respond() {
     postMessage(cool());
     this.res.end();
   } 
-  else if(request.text && botRegexDL.test(request.text)) {
+  else if(request.text && botRegexChew.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn");
+    postMessage("https://i.groupme.com/788x707.png.78f65f32c0bb455684a81552eb034980");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -34,9 +34,9 @@ function respond() {
     postMessage("https://i.imgflip.com/xgtsl.jpg");
     this.res.end();
   }
-  else if(request.text && botRegexRules.test(request.text)) {
+  else if(request.text && botRegexPay.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1700x1951.jpeg.7d433d833d3c4be6865f5303d8488bb6");
+    postMessage("https://i.groupme.com/763x318.png.c51cc183a8004411849ec85120af6a24");
     this.res.end();
   } 
   else if(request.text && botRegexMI.test(request.text)) {
@@ -44,16 +44,16 @@ function respond() {
     postMessage("https://i.kinja-img.com/gawker-media/image/upload/mjvi0ol0s5i3c6ikolql.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexSC.test(request.text)) {
+  else if(request.text && botRegexOffense.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn/teams"+request.text.substring(5,8)+"/schedule");
+    postMessage("https://i.groupme.com/844x705.png.a9d77b1e586f4717b7ea15563bb2a967");
     this.res.end();
   }
-  else if(request.text && botRegexP.test(request.text)) {
+  else if(request.text && botRegexDefense.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/maddenszn/players?=name"+rep+"&position=all&team=all");
+    postMessage("https://i.groupme.com/840x311.png.a2757419aea14faba15e7a6aef2b7d76");
     this.res.end();
   }  
 
@@ -62,9 +62,9 @@ function respond() {
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
     this.res.end();
   } 
-  else if(request.text && botRegexSB.test(request.text)) {
+  else if(request.text && botRegexTrade.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn/rules");
+    postMessage("https://i.groupme.com/895x598.png.0b9c5de1fcfe4645b6f2d94d9695346f");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -72,9 +72,9 @@ function respond() {
     postMessage("http://www.quickmeme.com/img/fe/fe9126fe4327f1b37f06c8c00c051bf8f37c1580b6c3d16da8b4dcb8607b60b2.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexWk.test(request.text)) {
+  else if(request.text && botRegexMix.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/maddenszn/teams/");
+    postMessage("https://i.groupme.com/1048x121.png.c1b8db406ab748ed97d8426e23c64049");
     this.res.end();
   } 
   else if(request.text && botDEZ.test(request.text)) {
