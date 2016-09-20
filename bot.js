@@ -5,9 +5,9 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexChew = /^\/chew clock/i;botRegexSalt = /^\/salt/;botRegexPay = /^\/payouts/;
-      botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexOffense = /^\/offense/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
-      botRegexDefense = /^\/defense/i;  botRegexTw = /^\/twitch/i; botRegexTrade = /^\/trades/; botRegexSh = /^\/oh/; botRegexMix = /^\/mix/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
+      botRegex = /^\/cool guy/; botRegexSalt = /^\/salt/;botRegexPay = /^\/payouts/;
+      botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
+      botRegexTw = /^\/twitch/i; botRegexTrade = /^\/trades/; botRegexSh = /^\/oh/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
       botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
@@ -17,11 +17,6 @@ function respond() {
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage(cool());
-    this.res.end();
-  } 
-  else if(request.text && botRegexChew.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/788x707.png.78f65f32c0bb455684a81552eb034980");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -44,19 +39,6 @@ function respond() {
     postMessage("https://i.kinja-img.com/gawker-media/image/upload/mjvi0ol0s5i3c6ikolql.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexOffense.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/844x705.png.a9d77b1e586f4717b7ea15563bb2a967");
-    this.res.end();
-  }
-  else if(request.text && botRegexDefense.test(request.text)) {
-    this.res.writeHead(200);
-    var req = request.text.substring(5,request.text.length);
-    var rep = req.replace(/ /,"+");
-    postMessage("https://i.groupme.com/840x311.png.a2757419aea14faba15e7a6aef2b7d76");
-    this.res.end();
-  }  
-
   else if(request.text && botRegexTw.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
@@ -72,12 +54,7 @@ function respond() {
     postMessage("http://www.quickmeme.com/img/fe/fe9126fe4327f1b37f06c8c00c051bf8f37c1580b6c3d16da8b4dcb8607b60b2.jpg");
     this.res.end();
   } 
-  else if(request.text && botRegexMix.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("https://i.groupme.com/1048x121.png.c1b8db406ab748ed97d8426e23c64049");
-    this.res.end();
-  } 
-  else if(request.text && botDEZ.test(request.text)) {
+   else if(request.text && botDEZ.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Throw Up The X*");
     this.res.end();
@@ -129,7 +106,7 @@ this.res.end();
 }
   else if(request.text && botRegexRuless.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/844x1329.jpeg.a2d09e284afe4824b62783be71410190");
+postMessage("https://i.groupme.com/1048x1771.jpeg.83ee008dcab04bb2963fd2d40b686df4");
 this.res.end();
 }
   else if(request.text && botRegexCryingg.test(request.text)) {
