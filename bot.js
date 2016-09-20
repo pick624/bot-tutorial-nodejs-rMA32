@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexChew = /^\/chew clock/i;botRegexSalt = /^\/salt/;botRegexPay = /^\/payouts/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/Mike/; botRegexOffense = /^\/offense/i; botDEZ = /^\/Dez/; botDuck = /^\/duck/;
       botRegexDefense = /^\/defense/i;  botRegexTw = /^\/twitch/i; botRegexTrade = /^\/trades/; botRegexSh = /^\/oh/; botRegexMix = /^\/mix/; botRegexCC = /^\/respek/; botRegexSr = /^\/trash/; botRegexSt = /^\/haha/; botRegexQu = /^\/stfu/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/; botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCryingg = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://i.ytimg.com/vi/efLRmlILC2I/maxresdefault.jpg'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -125,6 +125,11 @@ this.res.end();
   else if(request.text && botRegexL.test(request.text)) {
 this.res.writeHead(200);
 postMessage("https://pbs.twimg.com/media/CLNho0mUcAAZ5KC.jpg");
+this.res.end();
+}
+  else if(request.text && botRegexRuless.test(request.text)) {
+this.res.writeHead(200);
+postMessage("https://i.groupme.com/844x1329.jpeg.a2d09e284afe4824b62783be71410190");
 this.res.end();
 }
   else if(request.text && botRegexCryingg.test(request.text)) {
