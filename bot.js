@@ -49,6 +49,11 @@ function respond() {
     postMessage("https://i.groupme.com/895x598.png.0b9c5de1fcfe4645b6f2d94d9695346f");
     this.res.end();
   } 
+  else if(request.text && botRegexGuide.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/968x740.png.6aa256a22515476d9287f9d46aaa7dd6");
+    this.res.end();
+  } 
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.quickmeme.com/img/fe/fe9126fe4327f1b37f06c8c00c051bf8f37c1580b6c3d16da8b4dcb8607b60b2.jpg");
