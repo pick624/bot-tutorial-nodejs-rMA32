@@ -131,7 +131,7 @@ this.res.end();
 }
     else if(request.text && botRegexOffseason.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/629x696.png.d0a494caa84249348dadb5093c445be6");
+postMessage("https://i.groupme.com/734x546.jpeg.10df3d73f7764fc9af2e11a55d3fdb3b");
 this.res.end();
 }
       else if(request.text && botRegexDL.test(request.text)) {
