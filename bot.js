@@ -116,7 +116,7 @@ this.res.end();
 }
   else if(request.text && botRegexRuless.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/606x873.png.a1a7b9dbdad34f848d8396a2a8429078");
+postMessage("https://i.groupme.com/1531x1599.jpeg.8eb3a9e6e8bd474abd5434774e757ffa");
 this.res.end();
 }
   else if(request.text && botRegexCryingg.test(request.text)) {
