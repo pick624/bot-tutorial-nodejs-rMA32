@@ -136,7 +136,7 @@ this.res.end();
 }
       else if(request.text && botRegexDL.test(request.text)) {
 this.res.writeHead(200);
-postMessage("http://daddyleagues.com/szn");
+postMessage("https://daddyleagues.com/szn");
 this.res.end();
 }
         else if(request.text && botRegexWeekOne.test(request.text)) {
