@@ -61,7 +61,7 @@ function respond() {
   } 
   else if(request.text && botRegexSh.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/Rt23MIHkCJwdy/giphy.gif");
+    postMessage("https://i.groupme.com/195x229.gif.5d12ede6cdcc48dfbaad6fe71282d4a8");
     this.res.end();
   } 
    else if(request.text && botDEZ.test(request.text)) {
