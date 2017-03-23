@@ -141,87 +141,87 @@ this.res.end();
 }
         else if(request.text && botRegexWeekOne.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/495x904.png.eba23b7707654c2daf14b824abdfb47f");
+postMessage("");
 this.res.end();
 }
         else if(request.text && botRegexWeek2.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/465x844.png.4990c54d8a7c42c491f809202511cc37");
+postMessage("https://i.groupme.com/631x1159.png.8f6c4cd79eca4c329c7c201ab87327f4.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek3.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/457x846.png.c9b94e23b44e475fabcfa0eed77ade06");
+postMessage("https://i.groupme.com/635x1131.png.6cf38c8eef4a4d6a9d4d439242dab614.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek4.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/455x787.png.97ce887cbe8b4920adfef281f93ecf20");
+postMessage("https://i.groupme.com/1270x1986.png.02e4ce84329c4c1786d3671554d39f18.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek5.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/454x746.png.15cd6885c3ab4632b0221dc87bcc39a9");
+postMessage("https://i.groupme.com/1243x2013.png.9890d88d6cc64967bb0e02d3546887cd.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek6.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/459x794.png.162b55373d634db8821982d83a6d819d");
+postMessage("https://i.groupme.com/1249x1975.png.99fdf4e071764b01aedb8dbf04bbb51a.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek7.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/570x983.png.75d1d3b5535949f69f6d1f8674270a14");
+postMessage("https://i.groupme.com/1253x2006.png.231f1d35df344e3abe0b40cbfc0f8bae.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek8.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/467x691.png.c12c1bfebef54ed0bf9d9f8c525dcce9");
+postMessage("https://i.groupme.com/1273x1870.png.2dc77ec68c0b43f58be20316103f317c.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek9.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/461x693.png.271efbaef3904fa68edcb4d3c8718fe8");
+postMessage("https://i.groupme.com/1248x1863.png.234394cda54b4138be61f51e5f3f683d.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek10.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/458x741.png.f97fe275e7234265a0d62e427db983b3");
+postMessage("https://i.groupme.com/1231x2003.png.1adbe58a2f1f46768cd740b620ef8b62.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek11.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/454x747.png.cc6cc304ca8346a8a766b00aa9c6df0e");
+postMessage("https://i.groupme.com/624x1147.png.95c7650ed0e14158bea4013bb3cb4858.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek12.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/449x845.png.1cb8cefbe965434f8b1af42fecc66502");
+postMessage("https://i.groupme.com/618x1146.png.01a6a33e2fd04f898cd45876a7dbdd25.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek13.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/450x792.png.5bff032fed374e218ef4426bf84d8c46");
+postMessage("https://i.groupme.com/617x1129.png.fc9390e2f928407ba13716cee47f080f.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek14.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/448x841.png.0aad3d1a56f54af591651227705e1b2c");
+postMessage("https://i.groupme.com/635x1125.png.e2e6d1810358468498f6227108938f64.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek15.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/450x842.png.a0570aa8e3c74210b88497696a2ce2e0");
+postMessage("https://i.groupme.com/621x1142.png.bc2d802be12546fcb1b0e04844300dec.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek16.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/452x846.png.c0c350662e8b41e69670b8e6c5439dad");
+postMessage("https://i.groupme.com/629x1144.png.2864c578f62d4c3fab2a4e3dfba2996b.large");
 this.res.end();
 }
         else if(request.text && botRegexWeek17.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://i.groupme.com/452x846.png.c0c350662e8b41e69670b8e6c5439dad");
+postMessage("https://i.groupme.com/613x1140.png.99b273cd67e342568f05d6edab7d05d2.large");
 this.res.end();
 }
   else if(request.text && botRegexCheese.test(request.text)) {
