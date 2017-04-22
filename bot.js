@@ -121,7 +121,7 @@ this.res.end();
 }
   else if(request.text && botRegexCryingg.test(request.text)) {
 this.res.writeHead(200);
-postMessage("https://media.giphy.com/media/3ohA2XuxdIjFlHGhlC/giphy.gif");
+postMessage("https://i.groupme.com/499x281.gif.5b2ee2198fcb4d14996bb88a9c7fcff4");
 this.res.end();
 }
   else if(request.text && botRegexCommands.test(request.text)) {
